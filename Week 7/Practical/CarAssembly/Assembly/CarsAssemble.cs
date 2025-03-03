@@ -44,7 +44,20 @@ namespace Assembly
         public static double SuccessRate(int speed)
         {
             // Todo: implement the method SuccessRate
-            throw new NotImplementedException("Please implement the (static) AssemblyLine.SuccessRate() method");
+            //throw new NotImplementedException("Please implement the (static) AssemblyLine.SuccessRate() method");
+
+            if (speed > 0)
+            {
+                if (speed >= 1 && speed <= 4)
+                {
+                    return 1;
+                }
+            }
+            else
+            {
+                return 0.00;
+            }
+
         }
 
         /// <summary>
@@ -62,6 +75,8 @@ namespace Assembly
         {
             // Todo: implement the ProductionRatePerHour method
             throw new NotImplementedException("Please implement the (static) AssemblyLine.ProductionRatePerHour() method");
+
+
         }
 
         /// <summary>
